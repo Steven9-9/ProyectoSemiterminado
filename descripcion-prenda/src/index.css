@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.image-gallery-content.image-gallery-thumbnails-right .image-gallery-slide .image-gallery-image {
+  max-height: 100vh;
+  margin-top: 140px;
+  object-fit: contain;
+}
+
+.image-gallery-thumbnails .image-gallery-thumbnails-container {
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 210px;
+}
+
+.descripcion {
+  width: 30%;
+  height: 400px;
+  float: right;
+  margin-top: -523px;
+  text-align: start;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boton-desplegable {
+  position: relative;
+  display: inline-block;
+  width: 34%;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.opciones {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0px);
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+}
+
+.boton-desplegable:hover .opciones {
+  display: block;
+}
+
+.opciones button {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.opciones button:hover {
+  background-color: #f2f2f2;
+}
+
+.selector-cantidad {
+  display: flex;
+  margin-left: 167px;
+  margin-top: 365px;
+  position: absolute;
+}
+
+.input-cantidad {
+  width: 50px;
+  text-align: center;
+}
+
+.btn-menos,
+.btn-mas {
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btn-guardar {
+background-color: black;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: -167px;
+    position: inherit;
+    margin-top: 65px;
+}
+
+.btn-menos:hover,
+.btn-mas:hover,
+.btn-guardar:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.vitrina {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: black;
+}
+
+.vitrina img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  cursor: pointer;
+  margin-top: 130px;
+
+
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 3.1);
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 235px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  height: 263px;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.product p {
+  color: #666;
+}
+
+.buy-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.product-info{    
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+
+.buy-btn:hover {
+  background-color: #09110f;
+}
+
+.details-btn{
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #09110f;
+}
+
+.product {
+  position: relative; /* Para que los elementos absolutos sean relativos a este */
+}
+
+
+.tallas-overlay {
+  position: absolute;
+  top: 240px;
+  left: 65px;
+  display: flex;
+  justify-content: space-between;
+  width: 156px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 5px;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(-20px);
+  height: 50px;
+  align-items: center;
+}
+
+.product:hover .tallas-overlay {
+  opacity: 1; /* Aparecer cuando se hace hover en el producto */
+  transform: translateY(0); /* Volver a la posición normal */
+}
+
+.tallas-overlay div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tallas-overlay div.selected {
+  background-color: #000;
+  color: white;
+}
+
+.tallas-overlay div:hover {
+  background-color: #666;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Estilos para pantallas medianas (por ejemplo, tabletas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos aquí */
+}
+
+/* Estilos para pantallas grandes (por ejemplo, computadoras de escritorio) */
+@media only screen and (min-width: 1025px) {
+  /* Estilos aquí */
+}

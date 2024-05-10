@@ -1,0 +1,58 @@
+{
+  "usuario": [
+    {
+      "id": "1",
+      "correo": "rojas@correo.co",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "2",
+      "correo": "steven@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "3",
+      "correo": "aleja@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "4",
+      "correo": "s@s.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "4",
+      "correo": "cris@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "5",
+      "correo": "pipo@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "6",
+      "correo": "pupa@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "1",
+      "correo": "lulo@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    },
+    {
+      "id": "edfb9624-0178-4211-ba17-7837cce7f32a",
+      "correo": "steven@gmail.com",
+      "contrasena": "123456789As",
+      "confirmarContrasena": "123456789As"
+    }
+  ]
+}

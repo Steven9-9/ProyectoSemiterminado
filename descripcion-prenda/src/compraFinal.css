@@ -1,0 +1,91 @@
+body{overflow-y: auto;}
+
+
+
+.contenedor-formulario {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    font-size: 12px;
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+}
+
+.contenedor-formulario form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contenedor-formulario form input,
+.contenedor-formulario form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contenedor-formulario form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contenedor-formulario form button:hover {
+    background-color: #0056b3;
+}
+
+  
+  .resumen-compra{
+    width: 50%;
+    height: 89%;
+    background-color: rgb(247, 242, 242);
+    margin-left: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resumen-compra img{
+    float: left;
+    min-height: 107px;
+
+  }
+
+.resumen-compra p{
+
+    text-align: -webkit-auto;
+    margin: 5px;
+    margin-top: 10px;
+    margin-left: 155px;
+}
+
+.btnCerrar{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    position: absolute;
+    margin-right: -1230px;
+    margin-top: -559px;
+
+}
+
+.btnCerrar img{
+    border: none;
+    min-width: 41px;
+    margin: auto;
+}

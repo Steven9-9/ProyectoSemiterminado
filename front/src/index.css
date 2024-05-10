@@ -1,0 +1,929 @@
+d* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.inicio{
+
+  position: relative;
+}
+
+.iconos div{
+
+display: inline;
+cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  width: 485px;
+  height: 260px;
+}
+
+.popup-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  
+}
+
+.popup-contenido img {
+
+  width: 200px;
+  height: 260px;
+  object-fit: contain;
+  float: left;
+
+}
+
+.popup-contenido {
+  text-align: center;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+
+}
+
+.popup h2 {
+  font-size: xxx-large;
+  padding-top: 30px;
+
+}
+
+.popup p {
+  margin: 20px;
+
+}
+
+.popup input {
+  height: 20px;
+  width: 240px;
+
+}
+
+
+
+.cerrar:hover {
+  color: #000;
+}
+
+.btnSuscripcion {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btnSuscripcion:hover {
+  background-color: #2453ec;
+}
+
+header {
+
+  width: 100%;
+  height: 50px;
+  background-color: rgb(21, 43, 43);
+  position: fixed;
+  z-index: 50;
+  margin-top: -60px;
+
+}
+
+.slider {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  padding: 4px;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+
+
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.marcas {
+
+  width: 100%;
+  height: 39px;
+  text-align: center;
+  z-index: 1;
+  background-color: rgb(255, 254, 254);
+  position: fixed;
+  margin-top: 5px;
+
+}
+
+.marcas img {
+
+  width: 4%;
+  margin-left: 35px;
+  vertical-align: -webkit-baseline-middle;
+  margin-top: 4px;
+
+}
+
+
+.lateral {
+
+  float: left;
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.botonBarra {
+  border-style: none;
+  height: 35px;
+  background-color: white;
+  background-image: url(/src/assets/icons/menu.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  margin-left: 16px;
+  margin-top: 2px;
+}
+
+
+.menuLateral1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 61px;
+  left: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menuLateral1 a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.menuLateral1 a:hover {
+  background-color: #ccc;
+}
+
+.lateral h3 {
+  width: 85%;
+  border-bottom: 2px solid;
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-left: 8%;
+}
+
+
+.menu {
+
+  width: 100%;
+  height: 30px;
+
+}
+
+.menu img {
+  width: 10%;
+  height: 20px;
+  margin-left: 15px;
+
+}
+
+.iconos li {
+  display: inline;
+  /*border-right: solid rgb(233, 217, 217) 3px;*/
+
+}
+
+.icon {
+
+  width: 15%;
+
+
+}
+
+.iconos {
+
+  width: 15%;
+  height: 30px;
+  margin-top: -32px;
+  float: right;
+
+}
+
+.login-icon {
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(11, 151, 161, 0.5);
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.submit-btn {
+  width: 40%;
+  padding: 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-form span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.switch-form span:hover {
+  text-decoration: underline;
+}
+
+.login-form h2 {
+  color: white;
+  font-size: 35px;
+  margin: 18px;
+}
+
+.register-form h2 {
+
+  color: white;
+  font-size: 35px;
+  margin: 18px;
+
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(100vh - 80px);
+  object-fit: fill;
+}
+
+.image-gallery-slide .image-gallery-image {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.menuEmpresa {
+
+  width: 100%;
+  height: 730px;
+  position: relative;
+  margin-top: -40px;
+}
+
+.coleccion .image-gallery-slide .image-gallery-image {
+  height: 290px;
+  object-fit: fill;
+}
+
+.coleccion {
+
+  width: 60%;
+  height: 280px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 80px;
+  text-align: center;
+
+}
+
+.imgColeccion {
+  position: absolute;
+  top: -80px;
+  left: -70px;
+}
+
+.conoceMas {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: 45px;
+  transform: translate(-50%, -50%);
+  margin-left: -65px;
+
+}
+
+.conoceMas a {
+
+  font-size: 0;
+
+}
+
+.coleccion:hover .conoceMas {
+
+  width: 18%;
+  height: 80px;
+
+}
+
+.coleccion:hover a {
+
+  font-style: italic;
+  text-decoration: none;
+  font-size: large;
+  color: rgb(141, 131, 131);
+
+}
+
+.coleccion:hover {
+
+  opacity: .8;
+}
+
+.accesorios {
+
+  width: 60%;
+  height: 280px;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 10px;
+  text-align: center;
+
+
+}
+
+.accesorios .conoceMas {
+
+  margin-top: 130px;
+  margin-left: 0px;
+
+}
+
+
+.accesorios .image-gallery-slide .image-gallery-image {
+  height: 290px;
+  object-fit: contain;
+}
+
+
+.accesorios:hover .conoceMas {
+
+  width: 25%;
+  height: 85px;
+
+}
+
+.accesorios:hover a {
+
+
+  font-style: italic;
+  text-decoration: none;
+  font-size: large;
+  color: rgb(141, 131, 131);
+
+}
+
+.accesorios:hover {
+
+  opacity: .8;
+}
+
+.eventos {
+
+  width: 36%;
+  height: 730px;
+  position: absolute;
+  float: left;
+  margin-left: 840px;
+  margin-top: 10px;
+  top: 55px;
+}
+
+.eventos:hover .conoceMas {
+
+  width: 50%;
+  height: 85px;
+  left: 200px;
+  top: 210px;
+
+}
+
+
+.eventos:hover a {
+
+
+  font-style: italic;
+  text-decoration: none;
+  font-size: large;
+  color: rgb(141, 131, 131);
+
+}
+
+.eventos:hover {
+
+  opacity: .8;
+
+}
+
+.eventos .conoceMas {
+  margin-left: 55px;
+  margin-top: 90px;
+
+}
+
+.eventos .image-gallery-slide .image-gallery-image {
+  height: 800px;
+  object-fit: scale-down;
+}
+
+.LoNuevo {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ 
+}
+
+.LoNuevo div {
+
+  width: 100%;
+  height: 400px;
+
+}
+
+.loNuevoImg {
+
+  width: 100%;
+  height: 400px;
+  transition: width 0.5s ease, height 0.5s ease, box-shadow 0.5s ease;
+
+}
+
+.LoNuevo img:hover {
+
+  cursor: pointer;
+  width: 180%;
+  height: 400px;
+  filter: contrast(100%);
+  transform: scale(1.5);
+  object-fit: cover;
+  z-index: 999;
+  position: relative;
+
+}
+
+/* Clase palabra */
+.palabra {
+  background-color: #000;
+  color: #fff;
+  font-size: 106px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  pointer-events: auto;
+  align-items: center;
+  font-family: fantasy;
+}
+
+.LoNuevo:hover .palabra {
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+
+.fidelizacion {
+
+  width: 100%;
+  height: 400px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.fidelizacion div {
+
+  width: 80%;
+  height: 360px;
+  margin-top: 20px;
+
+}
+
+.fidelizacion img {
+
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  margin-top: -5px;
+}
+
+.menuInformacion {
+
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.menuInformacion div {
+
+  width: 18%;
+  height: 100px;
+  margin: 30px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  font-family: math;
+  color: #000000;
+}
+
+.menuInformacion img {
+  width: 25%;
+  margin-top: 20px;
+  margin-left: 12px;
+  float: left
+}
+
+.menuInformacion p {
+  margin-top: 35px;
+  float: left;
+  margin-left: 11px;
+  color: #000000;
+}
+
+
+
+.menuInformacion h3 {
+  float: left;
+  margin-left: 80px;
+  margin-top: -30px;
+  color: #000000;
+
+}
+
+
+footer {
+
+  width: 100%;
+  height: 700px;
+  background-color: rgb(10, 11, 26);
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.fondo {
+
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  opacity: .1;
+  object-position: 0px -160px;
+}
+
+
+.suscripcion {
+
+  width: 60%;
+  height: 100px;
+  background-color: rgb(5, 9, 27);
+  margin-top: -50px;
+  color: white;
+  font-family: math;
+  position: absolute;
+
+}
+
+.suscripcion img {
+
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  opacity: 0.2;
+
+}
+
+.suscripcionBtn {
+
+  width: 18%;
+  height: 50px;
+  margin-left: 500px;
+  margin-top: -55px;
+  cursor: pointer;
+  color: #515cff;
+  position: absolute;
+  z-index: 2;
+  opacity: .9;
+
+}
+
+.suscripcionBtn a {
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+
+}
+
+.suscripcion p {
+  margin-top: -75px;
+  margin-left: 315px;
+
+}
+
+.suscripcion h2 {
+
+  margin-left: 230px;
+  font-size: 30px;
+}
+
+
+.marcasF {
+  width: 70%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  position: absolute;
+  border-bottom: 2px solid white;
+
+}
+
+.marcasF div {
+
+  width: 20%;
+  height: 100px;
+  margin: 10px;
+}
+
+.marcasF img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  color: white
+}
+
+
+.redes {
+
+  width: 22%;
+  height: 40px;
+  font-size: 13px;
+  position: absolute;
+  color: white;
+  margin-top: 200px;
+  margin-right: 650px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-right: 4px solid white;
+
+}
+
+.redes a {
+
+  width: 13%;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.redes img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.mediosPagos {
+
+  width: 45%;
+  height: 40px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 310px;
+}
+
+.mediosPagos img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+.titulos {
+  width: 90%;
+  height: 30px;
+  position: absolute;
+  margin-top: 280px;
+  border-bottom: 2px solid white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+
+}
+
+.infoMarcas {
+
+  width: 20%;
+  height: 300px;
+  position: absolute;
+  margin-top: 330px;
+  margin-right: 945px;
+  display: grid;
+
+}
+
+.infoMarcas a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.info {
+  width: 20%;
+  height: 300px;
+  position: absolute;
+  margin-top: 330px;
+  margin-right: 255px;
+  display: grid;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+}
+
+.info2 {
+  width: 20%;
+  height: 215px;
+  position: absolute;
+  margin-top: 330px;
+  display: grid;
+  margin-left: 305px;
+}
+
+.info2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.final {
+
+  width: 80%;
+  height: 20px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  margin-top: 680px;
+  margin-left: 250px;
+}
+
+.servicio {
+  width: 22%;
+  height: 215px;
+  position: absolute;
+  margin-top: 330px;
+  display: grid;
+  margin-left: 934px;
+  align-content: space-around;
+
+}
+
+
+.servicio img {
+  width: 9%;
+  height: 20px;
+  background-color: #12153a;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 9px;
+
+}
+
+.servicio a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  header {
+
+    width: 100%;
+    height: 50px;
+    background-color: rgb(21, 43, 43);
+    position: fixed;
+    z-index: 50;
+    margin-top: -60px;
+  
+  }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+ 
+}

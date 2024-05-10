@@ -1,0 +1,85 @@
+{
+  "registroCompra": [
+    {
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "tipoDocumento": "Tipo de Documento",
+      "pais": "País",
+      "ciudad": "Ciudad",
+      "direccion": "Dirección",
+      "correoElectronico": "Correo Electrónico",
+      "celular": "Celular",
+      "metodoPago": "Método de Pago",
+      "id": "ab74"
+    },
+    {
+      "id": "d42a057a-dcff-4287-9099-7884d5a493cb",
+      "nombre": "john",
+      "apellido": "garcia",
+      "tipoDocumento": "Cédula",
+      "pais": "colombia",
+      "ciudad": "medellin",
+      "direccion": "cr2363·hgi",
+      "correoElectronico": "steven@gmail.com",
+      "celular": "2312728177",
+      "metodoPago": "Transferencia Bancaria",
+      "numeroDocumento": "123345",
+      "productos": [
+        {
+          "nombre": "Buzo Beige",
+          "precio": 200000,
+          "cantidad": 1,
+          "imagen": "/@fs/C:/Users/Dell/Downloads/proyecto-final/proyecto-final/descripcion-prenda/src/assets/Ropa/G-star/Buzos/g2.jpg",
+          "total": 200000
+        }
+      ],
+      "totalCompra": 200000
+    },
+    {
+      "id": "77ca3fc8-8aae-402d-9336-c060935c7558",
+      "nombre": "aleja",
+      "apellido": "arango",
+      "tipoDocumento": "Cédula",
+      "pais": "colombia",
+      "ciudad": "medellin",
+      "direccion": "cl34·213",
+      "correoElectronico": "aleja@gmail.com",
+      "celular": "2312728177",
+      "metodoPago": "Tarjeta de Crédito",
+      "numeroDocumento": "3454353",
+      "productos": [
+        {
+          "nombre": "Buzo Beige",
+          "precio": 200000,
+          "cantidad": 1,
+          "imagen": "/@fs/C:/Users/Dell/Downloads/proyecto-final/proyecto-final/descripcion-prenda/src/assets/Ropa/G-star/Buzos/g2.jpg",
+          "total": 200000
+        }
+      ],
+      "totalCompra": 200000
+    },
+    {
+      "id": "48030682-9ebc-4a74-bc71-1c5dc9c4d4db",
+      "nombre": "aleja",
+      "apellido": "arango",
+      "tipoDocumento": "Cédula",
+      "pais": "colombia",
+      "ciudad": "medellin",
+      "direccion": "cr2363·hgi",
+      "correoElectronico": "aleja@gmail.com",
+      "celular": "2312728177",
+      "metodoPago": "PayPal",
+      "numeroDocumento": "123345",
+      "productos": [
+        {
+          "nombre": "Buzo Negro Sin Chompa",
+          "precio": 140000,
+          "cantidad": 1,
+          "imagen": "/@fs/C:/Users/Dell/Downloads/proyecto-final/proyecto-final/descripcion-prenda/src/assets/Ropa/G-star/Buzos/g4.jpg",
+          "total": 140000
+        }
+      ],
+      "totalCompra": 140000
+    }
+  ]
+}

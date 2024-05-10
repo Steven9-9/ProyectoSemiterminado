@@ -1,0 +1,17 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "json-server --port 5172 --watch usuarios.json",
+    "start:json": "json-server --port 3001 --watch registroCompra.json"
+  },
+  "author": "steven",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {},
+  "description": ""
+}
